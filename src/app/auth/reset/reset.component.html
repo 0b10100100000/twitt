@@ -1,0 +1,15 @@
+<div class="row reset-form">
+  <div class="col-md-4 col-md-offset-5">
+    <h4>
+      <a class="btn btn-link" routerLink="/login">Login</a>
+    </h4>
+    <form (submit)="resetPassword()">
+      <div class="form-group">
+        <input class="form-control" type="password" placeholder="New password" [(ngModel)]="newPassword" name="newPassword">
+      </div>
+      <div class="form-group col-md-4 col-md-offset-4">
+        <input class="form-control  btn btn-primary" type="submit" value="Reset">
+      </div>
+    </form>
+  </div>
+</div>

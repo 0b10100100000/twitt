@@ -1,0 +1,26 @@
+<div class="row signup-form">
+  <div class="col-md-4 col-md-offset-4 signup-form-container">
+    <h4>
+      <a class="btn btn-link" routerLink="/login">Login</a>|
+      <a class="btn btn-link" routerLink="/signup">Register</a>
+    </h4>
+    <form (submit)="register()">
+      <div class="form-group">
+        <input class="form-control" type="text" placeholder="Name" [(ngModel)]="name" name="name">
+      </div>
+      <div class="form-group">
+        <input class="form-control" type="email" placeholder="Email" [(ngModel)]="email" name="email">
+      </div>
+      <div class="form-group">
+        <input class="form-control" type="password" placeholder="Password" [(ngModel)]="password" name="password">
+      </div>
+      <div class="form-group">
+        <input class="form-control" type="text" (keypress)="keyPress($event)" minlength=10 maxlength=10 placeholder="Mobile" [(ngModel)]="mobile"
+          name="mobile">
+      </div>
+      <div class="form-group col-md-4 col-md-offset-4">
+        <input class="form-control btn btn-primary" type="submit" value="Signup">
+      </div>
+    </form>
+  </div>
+</div>
